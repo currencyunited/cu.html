@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soundtest</title>
+    <script language="javascript" type="text/javascript">
+    function PlaySound() {
+      var sound = document.getElementById("note_c1");
+      try {
+        // RealPlayer
+        sound.DoPlay();
+      } catch (e) {
+        try {
+          // Windows Media / Quicktime
+          sound.Play();
+        } catch (e) {
+          alert("");
+        }
+      }
+    }
+
+    private void button1_Click(object sender)EventArgs e)
+    {
+      SoundPlayer[[ ss=new SoundPlayer(@"");
+    }
+    </script>
+</head>
+<body>
+<h1>Sound Test</h1>
+<embed id="note_c1" scr="c1.au" width="0" height="0"
+ autostart="false" enablejavascript="true"/>
+<input type="button" value="Play the Sound"
+ onClick="PlaySound()">
+</body>
+</html>
